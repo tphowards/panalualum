@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Aluminum & Glass</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f0f0f0;
+        }
+        .box {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+    <div class="box">
+        <h3></h3>
+        <p>Complete the check</p>
+        <div class="cf-turnstile" 
+             data-sitekey="0x4AAAAAAC25SRP8V7ioPyns" 
+             data-callback="redirectToExternal">
+        </div>
+    </div>
+
+    <script>
+        function redirectToExternal(token) {
+            // Replace with your external URL
+            window.location.href = "https://google.com";
+        }
+    </script>
+</body>
+</html>
